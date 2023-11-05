@@ -66,3 +66,17 @@ Dùng Rebase khi:
 
 Tóm lại, sử dụng merge hoặc rebase phụ thuộc vào mục tiêu của bạn và cách bạn muốn quản lý lịch sử commit. Không có cách nào là đúng hoặc sai tuyệt đối, và quyết định sử dụng nó phụ thuộc vào tình huống cụ thể và quy tắc của dự án hoặc nhóm làm việc.
 
+-----------------------------------------------------------------------------------------
+
+Trong thực tế, việc lựa chọn giữa merge và rebase phụ thuộc vào ngữ cảnh cụ thể và quy tắc làm việc của team. Dưới đây là một số trường hợp thực tế mà bạn có thể cân nhắc:
+
+- Khi làm việc trên nhánh chính (main branch): Trong trường hợp này, việc sử dụng merge thường được ưu tiên hơn. Lý do là merge giữ nguyên lịch sử commit và tạo ra một commit mới để ghép lại lịch sử của cả 2 nhánh. Điều này giúp lưu giữ lịch sử đầy đủ và chi tiết của dự án.
+
+- Khi làm việc trên nhánh phát triển (feature branch): Trong trường hợp này, việc sử dụng rebase thường được ưu tiên hơn. Lý do là rebase giúp tạo ra lịch sử commit có dạng tuyến tính, giúp dễ dàng điều hướng và kiểm tra lịch sử dự án. Ngoài ra, rebase cũng giúp giữ cho nhánh phát triển luôn cập nhật với những thay đổi mới nhất từ nhánh chính.
+
+- Khi muốn giữ lịch sử commit gọn gàng: Trong trường hợp này, rebase là lựa chọn tốt hơn. Rebase giúp tạo ra lịch sử commit có dạng tuyến tính, giúp dễ dàng điều hướng và kiểm tra lịch sử dự án.
+
+- Khi muốn giữ lịch sử commit đầy đủ và chi tiết: Trong trường hợp này, merge là lựa chọn tốt hơn. Merge giữ nguyên lịch sử commit và tạo ra một commit mới để ghép lại lịch sử của cả 2 nhánh. Điều này giúp lưu giữ lịch sử đầy đủ và chi tiết của dự án.
+
+Tuy nhiên, cần lưu ý rằng việc sử dụng merge hay rebase phụ thuộc vào ngữ cảnh cụ thể và quy tắc làm việc của team. Cả hai lệnh đều có ưu và nhược điểm riêng, do đó quan trọng nhất là hiểu rõ cách hoạt động của chúng để có thể sử dụng một cách linh hoạt.
+
