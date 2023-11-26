@@ -9,3 +9,4 @@ public TeacherMapper()
     }
 
 var itemsMapper = _mapper.Map<List<TeacherDto>>(items);
+var banner = _mapper.Map<Banner>(request);
