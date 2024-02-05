@@ -51,7 +51,7 @@
         previewPdfModalDetail.open();
     });
 
-    //Action
+    //Action commit
     const renderTable = () => {
         let signingAuthorityRows = $(".signing-authority-row");
 
