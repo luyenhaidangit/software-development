@@ -1,0 +1,40 @@
+#include <iostream>
+
+// Nhập từ bàn phím
+int nhapSo(int thuTu) {
+    int num;
+    std::cout << "Nhập số thứ " << thuTu << ": ";
+    std::cin >> num;
+    return num;
+}
+
+// Tìm số lớn nhất trong 3 số
+int timSoLonNhat(int a, int b, int c) {
+    int max = a; 
+
+    if (b > max) {
+        max = b; 
+    }
+    if (c > max) {
+        max = c; 
+    }
+
+    return max;
+}
+
+// Main
+int main() {
+    int a, b, c;
+    
+    a = nhapSo(1);
+    
+    b = nhapSo(2);
+    
+    c = nhapSo(3);
+
+    int max = timSoLonNhat(a, b, c);
+
+    std::cout << "Số lớn nhất trong ba số là: " << max << std::endl;
+
+    return 0;
+}
